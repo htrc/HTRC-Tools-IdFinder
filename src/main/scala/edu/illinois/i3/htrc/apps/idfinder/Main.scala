@@ -92,6 +92,8 @@ object Main extends App with LazyLogging {
     val svc = url(query)
     val resp = Http(svc OK as.json4s.Json)
 
+    logger.debug("Query: " + query)
+
     // Variant 1
     resp.map {
       case respJson =>
