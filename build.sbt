@@ -12,7 +12,7 @@ lazy val idfinder = (project in file(".")).
   settings(commonSettings: _*).
   settings(
     name := "idfinder",
-    version := "1.0-SNAPSHOT",
+    version := "1.0",
     libraryDependencies ++= Seq(
       "org.rogach"                    %% "scallop"            % "0.9.5",
       "ch.qos.logback"                %  "logback-classic"    % "1.1.3",
